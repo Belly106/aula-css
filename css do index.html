@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lilita+One&family=Nerko+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{ /*sem ponto iniciando é um SELETOR*/
+    margin: 0%;
+    background-color: darkseagreen;
+}
+.imag{
+   background-image: url(../img/capa.jpg);
+   background-size: cover; /*se ajusta ao tamanho do espaço*/
+   height: 480px;
+}
+
+.autor{
+   text-align: left;
+   text-decoration-color: beige;
+   margin-right: 0%;
+   margin-left: 0%;
+  
+      color: beige;
+      font-family: "Nerko One", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 10px;
+}
+
+.autor:hover, .p1:hover, .p2:hover, .p3:hover {
+   font-size: 17px;
+}
+
+.primeira{
+   background-color: darkseagreen;
+   padding: 17px; /*permite que você especifique quanto espaço deve aparecer entre o conteúdo de um elemento e sua borda */
+   margin-right: 10%;
+   margin-left: 10%;   
+   h1{
+      color:orangered;
+      text-align: center;
+      font-size: 50px;
+      font-family: "Abril Fatface", serif;
+      font-weight: 400;
+      font-style: normal;   
+   }
+   p{
+      text-align: justify;
+      font-size: 17px;
+      text-indent: 30px;
+      line-height:1.5;
+      color:white;
+      font-family: "Work Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+   }
+}
+.meioUm{
+   background-color: darkseagreen;
+   padding: 30px;
+   margin-right: 10%;
+   margin-left: 10%;
+   font-size: 17px;
+   text-align: justify;
+   text-indent: 30px;
+   line-height:1.5;
+   color: white;
+   font-family: "Work Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+   h2{
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size:30px;
+      color: darkorange
+   }
+   iframe{
+      padding: 20px;
+   }
+}
+.meioDois{
+   background-color: darkseagreen;
+   padding: 30px;
+   margin-right: 10%;
+   margin-left: 10%;
+   font-size: 17px;
+   text-align: justify;
+   text-indent: 30px;
+   line-height: 1.5;
+   color: white;
+   font-family: "Work Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+   h2{
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size:30px;
+      color: darkorange
+   }
+}
+
+.artistas{
+   margin-left: 10%;
+   margin-right: 10%;
+   padding: 30px;
+   font-size: 17px;
+   text-align: justify;
+   text-indent: 30px;
+   line-height: 1.5;
+   color: white;
+   font-family: "Work Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+   h2{
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size:30px;
+      color: darkorange
+   }
+   #mundial{
+      background: mediumseagreen;
+      height: 200px;
+      overflow: scroll;
+      border: 7px solid mediumseagreen;
+      border-radius: 40px;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+      
+   }
+   #nacional{
+      background: mediumseagreen;
+      height: 200px;
+      overflow: scroll;
+      border: 7px solid mediumseagreen;
+      border-radius: 40px;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+   }
+}
+#nacional:hover, #mundial:hover{
+   background: rgb(241, 142, 157);
+   border: 7px solid rgb(241, 142, 157);
+   ::-webkit-scrollbar {
+      width: 6px;
+   }
+}
+
+.meioQuatro {                    /*.meioQuatro, .meioCinco: agrupamento de tags, classes, seletores, id (#) etc...*/
+   padding: 40px; 
+   display: inline-block;
+   border: 7px solid seagreen;
+   border-radius: 40px;
+   background: seagreen; /*border*/
+   text-align: center;
+   text-decoration: none;  /* Remove o sublinhado do texto */
+   font-size: 17px; /* Define o tamanho da fonte */
+   cursor: pointer; /* Muda o cursor para indicar que é clicável */
+   a{
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      font-family: "Nerko One", cursive;
+      font-weight: 400; /*grossura da letra*/
+      font-style: normal;
+      text-align: center;
+   }
+}
+
+.meioCinco{
+   text-align: center;
+   padding: 40px; 
+   border: 5px solid seagreen; /*borda sólida*/
+   border-radius: 40px;
+   display: inline-block; /* Ajusta o tamanho da div ao conteúdo em bloco */ 
+   background: seagreen;
+   cursor: pointer;
+   a{
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      font-family: "Nerko One", cursive;
+      font-weight: 400; /*grossura da fonte*/
+      font-style: normal;
+      text-align: center;
+   }
+}
+
+.meioCinco:hover, .meioQuatro:hover{
+   padding: 50px;
+   background: lightseagreen;
+   border:lightseagreen;
+   transition: 0.3s ease background-color;
+   font-size:20px;
+}
+
+.p1, .p2, .p3 { /* com o ponto iniciando, quer dizer que é para estilisar somente a CLASSE do HTML com mesmo nome, por ex. a DIV inicio*/
+   text-align: right;
+   text-decoration-color: beige;
+   margin-right: 0%;
+   margin-left: 0%;
+  
+      color: beige;
+      font-family: "Nerko One", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 10px;      
+}
