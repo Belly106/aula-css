@@ -12,12 +12,78 @@ body{ /*sem ponto iniciando é um SELETOR*/
    background-size: cover; /*se ajusta ao tamanho do espaço*/
    height: 480px;
 }
+/*estilização do menu*/
+.menu ul{
+   list-style: none;
+   padding: 0;
+   border: 2px solid rebeccapurple;
+   border-radius: 40px;
+   display: inline-block;
+   background-color: rebeccapurple;
+   margin-left: 20px;
+   margin-right: 20px;
+   height: 50px;
+   
+}
+.menu ul li{
+   display: inline-block;
+   text-align: center;
+   position: relative; 
+}
+.menu ul li a{
+   display:block;
+   padding: 10px 20px;
+   text-decoration: none;
+   color:white;
+}
+/*estilização do menu dropdown*/
+.dropdown-content{
+   display: none; /*esconde o submenu*/
+   position:absolute; /*referente a classe pai*/
+   min-width:160px; 
+   z-index:1; /* Garante que o submenu dropdown apareça sobre outros elementos da página.*/
+}
+.dropdownum {
+   display: none;
+   position: absolute;
+   width: 160px;
+   z-index: 1;
+}
 
+.dropdown-content a{
+   display:block;
+   padding: 10px 20px;
+   text-decoration: none;
+   color: white;
+   border: 1px solid white;
+   border-radius: 40px;
+   background-color: rebeccapurple;
+}
+.dropdownum a{
+   display: block;
+   padding: 10px 20px;
+   text-decoration: none;
+   color: white;
+   border: 1px solid white;
+   border-radius: 40px;
+   background-color: rebeccapurple;
+}
+.menu ul li:hover  .dropdown-content{
+   display: block;
+   color: black;
+}
+.menu ul li:hover .dropdownum{
+   display: block;
+   color: black;
+}
+.menu ul li:hover .inicio{
+   text-decoration-color: black;
+}
 .autor{
    text-align: left;
    text-decoration-color: beige;
    margin-right: 0%;
-   margin-left: 0%;
+   margin-left: 2%;
   
       color: beige;
       font-family: "Nerko One", cursive;
@@ -202,8 +268,8 @@ body{ /*sem ponto iniciando é um SELETOR*/
 .p1, .p2, .p3 { /* com o ponto iniciando, quer dizer que é para estilisar somente a CLASSE do HTML com mesmo nome, por ex. a DIV inicio*/
    text-align: right;
    text-decoration-color: beige;
-   margin-right: 0%;
-   margin-left: 0%;
+   margin-right: 2%;
+   margin-left: 3%;
   
       color: beige;
       font-family: "Nerko One", cursive;
