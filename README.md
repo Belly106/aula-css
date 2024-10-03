@@ -93,3 +93,66 @@ clear: both faz limpar o float
         }
     
 }
+LIST-STYLE-TYPE{
+    propriedade para tirar/mudar o efeito de listas, como text-decoration. 
+}
+
+Propriedade OPACITY{
+    Serve para fazer efeitos.
+    Transforma a imagem/fundo opacos (transparentes), bem dizer. 
+    o.1 = 10 porcento de opacidade (muito opaca);
+    1.0 = 100 porcento sem opacidade (pouco opaca);
+    até chegar ao 1.0, existem vários níveis de opacidade.
+}
+
+Propriedade DROPDOWN{
+Abre mais opções para selecionar, muito usado em menus
+}
+ 
+Importancia no código: 
+#ID{}
+tag.classe{}
+.classe{}
+tag{}
+
+efeito gradiente{
+    Faz uma imagem degradê.
+    comando:
+    background-image: linear-gradient(white, blue, black);
+
+    para direcionamento do degrade: 90deg, 180deg, 45 deg (graus)
+    ou To left, to right, to top, to bottom right, ...
+
+    background-imagem: radial-gradient (para fazer um circulo de cores)
+} 
+
+Sombreado{
+    text-shadow: 13px 5px 2px (black) 
+    13px=horizontal
+    5px=vertical
+    2px=intensidade da sombra
+
+    box-shadow: mesmos camandos
+}
+
+efeitos de textos{
+    letter-spacing: permite controlar o espaço entre as letras do texto.
+    line-height: espaçamento entre linhas
+
+    text-overflox: quando o texto passa do tamanho do botão, card, imagem..., ele deixa os 3 pntinhos no final. 
+    white-space: é usada para descrever como os espaços em branco dentro dos elementos são manipulados.
+    normal
+Sequências de espaços em branco são recolhidas. Caracteres de nova linha no código são tratados como outros espaços em branco. As linhas quebram conforme a necessidade para preencher as linhas das caixas (boxes).
+
+nowrap
+Recolhe os espaços em branco como no normal, mas suprime as quebras de linha (quebra de texto) no texto.
+
+pre
+Sequências de espaço em branco são preservadas, linhas são quebradas apenas em carateres de nova linha no código e em elementos <br>.
+
+pre-wrap
+Sequências de espaço em branco são preservadas. Linhas são quebradas em caracteres de nova linha, em <br> e quando necessário para preencher as linhas das caixas (boxes).
+
+pre-line
+Sequências de espaços em branco são recolhidas. Linhas são quebradas em caracteres de nova linha, em <br> e quando necessário para preencher as linhas das caixas (boxes).
+}
